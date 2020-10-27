@@ -28,5 +28,3 @@ WHERE artist = 'Michael Jackson';
 
 SELECT 'Michael Jackson' AS 'Albums by';
 SELECT * FROM albums WHERE artist = 'Peter Jackson';
-
--- Change 'Michael Jackson' to 'Peter Jackson'
