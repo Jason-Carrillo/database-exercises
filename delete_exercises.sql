@@ -7,4 +7,4 @@ SELECT 'Disco Genre' AS 'Albums';
 DELETE FROM albums WHERE genre = 'disco';
 
 SELECT 'by Whitney Houston' AS 'Albums';
-DELETE FROM albums WHERE artist LIKE 'Whitney Houston%';
+DELETE sFROM albums WHERE artist LIKE 'Whitney Houston%';
