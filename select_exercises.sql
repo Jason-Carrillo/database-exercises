@@ -1,3 +1,4 @@
 USE codeup_test_db;
 
-SELECT * FROM albums WHERE artist = 'Pink Floyd';
+SELECT 'Albums' AS 'Pink Floyd';
+SELECT name FROM albums WHERE artist = 'Pink Floyd';
