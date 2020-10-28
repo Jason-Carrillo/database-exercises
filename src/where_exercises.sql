@@ -14,10 +14,15 @@ USE employees_db;
 # OR first_name ='Maya'
 #     AND gender = 'M';
 
+# select *
+# from employees
+# WHERE last_name LIKE 'E%'
+# OR last_name LIKE '%E';
+
 select *
 from employees
 WHERE last_name LIKE 'E%'
-OR last_name LIKE '%E';
+AND last_name LIKE '%E';
 
 # select *
 # from employees
