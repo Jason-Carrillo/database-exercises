@@ -24,11 +24,16 @@ USE employees_db;
 # WHERE last_name LIKE 'E%'
 # AND last_name LIKE '%E';
 
+# select *
+# from employees
+# WHERE birth_date LIKE '%-12-25'
+# AND hire_date > '1990-00-00'
+# AND hire_date < '2000-00-00';
+
 select *
 from employees
-WHERE birth_date LIKE '%-12-25'
-AND hire_date > '1990-00-00'
-AND hire_date < '2000-00-00';
+WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%';
 
 # select *
 # from employees
