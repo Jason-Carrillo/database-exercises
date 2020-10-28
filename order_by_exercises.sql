@@ -5,15 +5,21 @@ USE employees_db;
 # WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 # ORDER BY last_name, birth_date;
 
+# select *
+# from employees
+# WHERE first_name ='Irena'
+#     AND gender = 'M'
+# OR first_name ='Vidya'
+#     AND gender = 'M'
+# OR first_name ='Maya'
+#     AND gender = 'M'
+# ORDER BY last_name, first_name;
+
 select *
 from employees
-WHERE first_name ='Irena'
-    AND gender = 'M'
-OR first_name ='Vidya'
-    AND gender = 'M'
-OR first_name ='Maya'
-    AND gender = 'M'
-ORDER BY last_name, first_name;
+WHERE last_name LIKE 'E%'
+OR last_name LIKE '%E'
+ORDER BY emp_no;
 
 # select *
 # from employees
