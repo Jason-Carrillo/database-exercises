@@ -5,7 +5,7 @@ USE employees_db;
 # WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 # ORDER BY last_name, birth_date;
 
-select *
+# select *
 # from employees
 # WHERE first_name ='Irena'
 #     AND gender = 'M'
