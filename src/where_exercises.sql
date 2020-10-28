@@ -14,6 +14,10 @@ USE employees_db;
 # WHERE hire_date > '1990-00-00'
 # AND hire_date < '2000-01-01';
 
+# select *
+# from employees
+# WHERE birth_date LIKE '%-12-25';
+
 select *
 from employees
-WHERE birth_date LIKE '%-12-25';
+WHERE last_name LIKE '%q%';
