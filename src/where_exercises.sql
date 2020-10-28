@@ -5,6 +5,13 @@ USE employees_db;
 # WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 # ORDER BY last_name, birth_date;
 
+select *
+from employees
+WHERE first_name ='Irena'
+OR first_name ='Vidya'
+OR first_name ='Maya';
+
+
 # select *
 # from employees
 # WHERE last_name LIKE 'E%';
@@ -18,6 +25,7 @@ USE employees_db;
 # from employees
 # WHERE birth_date LIKE '%-12-25';
 
-select *
-from employees
-WHERE last_name LIKE '%q%';
+# select *
+# from employees
+# WHERE last_name LIKE '%q%';
+
