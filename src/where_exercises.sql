@@ -8,8 +8,11 @@ USE employees_db;
 select *
 from employees
 WHERE first_name ='Irena'
+    AND gender = 'M'
 OR first_name ='Vidya'
-OR first_name ='Maya';
+    AND gender = 'M'
+OR first_name ='Maya'
+    AND gender = 'M';
 
 
 # select *
