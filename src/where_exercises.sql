@@ -19,10 +19,16 @@ USE employees_db;
 # WHERE last_name LIKE 'E%'
 # OR last_name LIKE '%E';
 
+# select *
+# from employees
+# WHERE last_name LIKE 'E%'
+# AND last_name LIKE '%E';
+
 select *
 from employees
-WHERE last_name LIKE 'E%'
-AND last_name LIKE '%E';
+WHERE birth_date LIKE '%-12-25'
+AND hire_date > '1990-00-00'
+AND hire_date < '2000-00-00';
 
 # select *
 # from employees
