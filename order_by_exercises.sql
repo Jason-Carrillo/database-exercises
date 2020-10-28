@@ -13,7 +13,7 @@ OR first_name ='Vidya'
     AND gender = 'M'
 OR first_name ='Maya'
     AND gender = 'M'
-ORDER BY first_name, last_name;
+ORDER BY last_name, first_name;
 
 # select *
 # from employees
