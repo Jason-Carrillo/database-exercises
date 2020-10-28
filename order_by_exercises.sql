@@ -5,14 +5,15 @@ USE employees_db;
 # WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 # ORDER BY last_name, birth_date;
 
-# select *
-# from employees
-# WHERE first_name ='Irena'
-#     AND gender = 'M'
-# OR first_name ='Vidya'
-#     AND gender = 'M'
-# OR first_name ='Maya'
-#     AND gender = 'M';
+select *
+from employees
+WHERE first_name ='Irena'
+    AND gender = 'M'
+OR first_name ='Vidya'
+    AND gender = 'M'
+OR first_name ='Maya'
+    AND gender = 'M'
+ORDER BY first_name;
 
 # select *
 # from employees
@@ -34,10 +35,6 @@ USE employees_db;
 # from employees
 # WHERE hire_date LIKE '199%'
 # AND birth_date LIKE '%-12-25';
-
-select *
-from employees
-WHERE hire_date BETWEEN LIKE '1990%' AND
 
 # select *
 # from employees
