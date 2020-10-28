@@ -9,7 +9,11 @@ USE employees_db;
 # from employees
 # WHERE last_name LIKE 'E%';
 
+# select *
+# from employees
+# WHERE hire_date > '1990-00-00'
+# AND hire_date < '2000-01-01';
+
 select *
 from employees
-WHERE hire_date > '1990-00-00'
-AND hire_date < '2000-01-01';
+WHERE birth_date LIKE '%-12-25';
