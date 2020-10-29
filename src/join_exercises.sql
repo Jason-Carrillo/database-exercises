@@ -19,6 +19,15 @@ FROM departments d
         ON e.emp_no = dm.emp_no
 WHERE dm.to_date = '9999-01-01';
 
+SELECT dept_name, e.first_name, e.last_name
+FROM departments d
+         JOIN dept_manager dm
+              on d.dept_no = dm.dept_no
+         JOIN employees e
+              ON e.emp_no = dm.emp_no
+WHERE dm.to_date = '9999-01-01'
+AND e.gender = 'F';
+
 SELECT first_name, last_name, birth_date
 FROM employees
 WHERE emp_no IN (
