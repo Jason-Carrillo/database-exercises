@@ -28,6 +28,17 @@ FROM departments d
 WHERE dm.to_date = '9999-01-01'
 AND e.gender = 'F';
 
+SELECT dept_name, e.first_name, e.last_name, s.salary
+FROM departments d
+         JOIN dept_manager dm
+              on d.dept_no = dm.dept_no
+         JOIN employees e
+              ON e.emp_no = dm.emp_no
+         JOIN salaries s
+              ON s.emp_no = e.emp_no
+WHERE dm.to_date = '9999-01-01'
+AND s.to_date = '9999-01-01';
+
 SELECT first_name, last_name, birth_date
 FROM employees
 WHERE emp_no IN (
@@ -57,6 +68,8 @@ show tables;
 SELECT * FROM dept_manager;
 
 describe salaries;
+
+select * from salaries;
 
 SELECT * FROM titles;
 
