@@ -19,10 +19,10 @@ WHERE first_name ='Irena'
 # WHERE last_name LIKE 'E%'
 # OR last_name LIKE '%E';
 
-# select *
-# from employees
-# WHERE last_name LIKE 'E%'
-# AND last_name LIKE '%E';
+select *
+from employees
+WHERE last_name LIKE 'E%'
+AND last_name LIKE '%E';
 
 # select *
 # from employees
@@ -35,10 +35,10 @@ WHERE first_name ='Irena'
 # WHERE hire_date LIKE '199%'
 # AND birth_date LIKE '%-12-25';
 
-# select *
-# from employees
-# WHERE last_name LIKE '%q%'
-# AND last_name NOT LIKE '%qu%';
+select *
+from employees
+WHERE last_name LIKE '%q%'
+AND last_name NOT LIKE '%qu%';
 
 # select *
 # from employees
