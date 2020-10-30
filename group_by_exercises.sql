@@ -21,3 +21,8 @@ select DISTINCT last_name, COUNT(*)
 from employees
 GROUP BY last_name
 ORDER BY COUNT(*);
+
+select COUNT(gender), gender
+from employees
+WHERE first_name IN ('Irena', 'Vidya', 'Maya')
+GROUP BY gender;
