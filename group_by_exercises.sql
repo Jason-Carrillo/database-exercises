@@ -16,3 +16,8 @@ select DISTINCT last_name
 from employees
 WHERE last_name LIKE '%Q%'
 AND last_name NOT LIKE '%QU%';
+
+select DISTINCT last_name, COUNT(*)
+from employees
+GROUP BY last_name
+ORDER BY last_name DESC;
