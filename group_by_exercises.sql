@@ -20,4 +20,4 @@ AND last_name NOT LIKE '%QU%';
 select DISTINCT last_name, COUNT(*)
 from employees
 GROUP BY last_name
-ORDER BY last_name DESC;
+ORDER BY COUNT(*);
