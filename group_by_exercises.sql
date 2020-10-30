@@ -7,3 +7,7 @@ select last_name
 from employees
 WHERE last_name LIKE 'E%E'
 GROUP BY last_name;
+
+select DISTINCT first_name, last_name
+from employees
+WHERE last_name LIKE 'E%e';
