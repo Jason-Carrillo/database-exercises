@@ -37,7 +37,7 @@ AND last_name LIKE '%E';
 # AND hire_date > '1990-00-00';
 # # AND hire_date < '2000-00-00';
 
-select *
+select datediff(CURDATE(), hire_date)
 from employees
 WHERE hire_date LIKE '199%'
 AND birth_date LIKE '%-12-25'
