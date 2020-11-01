@@ -7,3 +7,5 @@ LIMIT 10;
 SELECT *
 FROM employees
 LIMIT 10;
+
+show databases;
