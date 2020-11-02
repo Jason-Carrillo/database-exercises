@@ -1,13 +1,13 @@
-# Search for email for user that entered an AD
+-- # Search for email for user that entered an AD
 
-# search by ad title
+-- # search by ad title
 
 SELECT users.email
 from users u
     JOIN ads a
      ON a.user_id = u.user_id
 WHERE a.title = "TITLE";
-# search by ad ID
+-- # search by ad ID
 
 SELECT u.email as 'Email Address'
 FROM users u
@@ -15,7 +15,7 @@ JOIN ads a
 ON a.user_Id = u.Id
 WHERE a.id = <id>;
 
-# search for categorie(s) of an ad
+-- # search for categorie(s) of an ad
 
 Select c.name
 FROM categories c
@@ -25,7 +25,7 @@ JOIN ads a
 ON a.ad_id = ac.ad_id
 WHERE a.ad_id = <id>;
 
-# Search for ALL ads in that category
+-- # Search for ALL ads in that category
 
 Select a.*
 FROM categories c
@@ -35,7 +35,7 @@ FROM categories c
               ON a.ad_id = ac.ad_id
 WHERE c.name = "name";
 
-# search for all ads a user has posted
+-- # search for all ads a user has posted
 
 SELECT a.*
 FROM ads a
