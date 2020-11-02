@@ -26,3 +26,4 @@ select COUNT(gender) AS 'Total', gender AS 'Gender'
 from employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 GROUP BY gender;
+
